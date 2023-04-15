@@ -1,0 +1,14 @@
+inputSet:
+  name: pull-request-input-set
+  identifier: pullrequestinputset
+  orgIdentifier: default
+  projectIdentifier: IntroGroovy
+  pipeline:
+    identifier: IntroGroovy
+    properties:
+      ci:
+        codebase:
+          build:
+            type: tag
+            spec:
+              tag: <+trigger.prNumber>
