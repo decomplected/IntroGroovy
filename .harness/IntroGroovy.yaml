@@ -201,6 +201,9 @@ pipeline:
               sharedPaths:
                 - /root/.m2
                 - /root/.gradle
+            when:
+              pipelineStatus: Success
+              condition: "false"
         - stage:
             name: build-it
             identifier: buildit
@@ -281,3 +284,6 @@ pipeline:
               sharedPaths:
                 - /root/.m2
                 - /root/.gradle
+            when:
+              pipelineStatus: Success
+              condition: "false"
