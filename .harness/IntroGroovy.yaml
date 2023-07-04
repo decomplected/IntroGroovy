@@ -206,6 +206,7 @@ pipeline:
                 - /root/.gradle
             when:
               pipelineStatus: Success
+              condition: "false"
         - stage:
             name: build-it
             identifier: buildit
@@ -288,4 +289,3 @@ pipeline:
                 - /root/.gradle
             when:
               pipelineStatus: Success
-              condition: "false"
