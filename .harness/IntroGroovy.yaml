@@ -107,6 +107,8 @@ pipeline:
             when:
               pipelineStatus: Success
               condition: "false"
+            delegateSelectors:
+              - helm-delegate
         - stage:
             name: build-gw
             identifier: buildgw
